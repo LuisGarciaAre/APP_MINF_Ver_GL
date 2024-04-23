@@ -1,0 +1,11 @@
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\bin\Debug\APP_MINF_Ver_GL.exe.config
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\bin\Debug\APP_MINF_Ver_GL.exe
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\bin\Debug\APP_MINF_Ver_GL.pdb
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\obj\Debug\APP_MINF_Ver_GL.csproj.AssemblyReference.cache
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\obj\Debug\APP_MINF_Ver_GL.csproj.SuggestedBindingRedirects.cache
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\obj\Debug\APP_MINF_Ver_GL.Form1.resources
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\obj\Debug\APP_MINF_Ver_GL.Properties.Resources.resources
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\obj\Debug\APP_MINF_Ver_GL.csproj.GenerateResource.cache
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\obj\Debug\APP_MINF_Ver_GL.csproj.CoreCompileInputs.cache
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\obj\Debug\APP_MINF_Ver_GL.exe
+C:\Users\luigarciaar\OneDrive - Education Vaud\ETML\2eme année\POBJ\exercices\POBJ_SLO2_23_24\Exercices Luis\C#_windowsForm\Ex2_APP_MINF\APP_MINF_Ver_GL\obj\Debug\APP_MINF_Ver_GL.pdb
