@@ -14,12 +14,8 @@ namespace APP_MINF_Ver_GL
     public partial class ControlGen_V1 : Form
     {
         String[] tabFormes = { "Sinus", "Carre", "Triangle", "DentScie" };
-        protected short userFrequence, userAmplitude, userOffset;
-
-        private void numAmplitude_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
+        protected String[] tabUserValues = new String[4];
+        protected String messageTx = "!S=TF=2000A=10000O=+5000W=0#";
 
         public ControlGen_V1()
         {
@@ -74,6 +70,34 @@ namespace APP_MINF_Ver_GL
                 gpBoxTX.Enabled = false;
                 cboxPortCOM.Enabled = true;
             }
+        }
+
+        private void btnSend_1fois_Click(object sender, EventArgs e)
+        {
+            composeMSG();
+        }
+
+        private void composeMSG()
+        {
+            int indexSignal = messageTx.IndexOf("S");
+            int indexFreq = messageTx.IndexOf("F");
+            int indexAmpl = messageTx.IndexOf("A");
+            int indexOffSet = messageTx.IndexOf("O");
+            String tempString;
+
+            tabUserValues[0] = numAmplitude.Value.ToString();
+            tabUserValues[1] = numFrequence.Value.ToString();
+            tabUserValues[2] = numOffset.Value.ToString();
+
+            tempString = messageTx.Substring((indexSignal + 2), 1);
+
+            messageTx.Replace("2000", tabUserValues[1]);
+            listBoxTX.Items.Add(messageTx);
+        }
+
+        private String ConvFormeToMSG()
+        {
+            String[] msgs = new String[listBoxTX.Items.Count];
         }
     }
 }

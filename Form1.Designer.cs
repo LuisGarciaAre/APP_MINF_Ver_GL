@@ -30,38 +30,38 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cboxPortCOM = new System.Windows.Forms.ComboBox();
             this.btnOpenPort = new System.Windows.Forms.Button();
+            this.cboxPortCOM = new System.Windows.Forms.ComboBox();
             this.gpBoxTX = new System.Windows.Forms.GroupBox();
-            this.gpBoxRX = new System.Windows.Forms.GroupBox();
-            this.lblFrequence = new System.Windows.Forms.Label();
-            this.lblFormeS = new System.Windows.Forms.Label();
-            this.lblAmplitude = new System.Windows.Forms.Label();
-            this.lblOffset = new System.Windows.Forms.Label();
-            this.cboxForme = new System.Windows.Forms.ComboBox();
-            this.numFrequence = new System.Windows.Forms.NumericUpDown();
-            this.numAmplitude = new System.Windows.Forms.NumericUpDown();
-            this.numOffset = new System.Windows.Forms.NumericUpDown();
-            this.listBoxTX = new System.Windows.Forms.ListBox();
-            this.btnSend_1fois = new System.Windows.Forms.Button();
-            this.btnSendContinu = new System.Windows.Forms.Button();
             this.chBoxSuavegarde = new System.Windows.Forms.CheckBox();
-            this.lblFormeRX = new System.Windows.Forms.Label();
-            this.lblAmplitudeRX = new System.Windows.Forms.Label();
-            this.lblFrequenceRX = new System.Windows.Forms.Label();
-            this.lblOffsetRX = new System.Windows.Forms.Label();
-            this.txtBoxForme = new System.Windows.Forms.TextBox();
-            this.txtBoxFrequence = new System.Windows.Forms.TextBox();
-            this.txtBoxAmplitude = new System.Windows.Forms.TextBox();
-            this.txtBoxOffset = new System.Windows.Forms.TextBox();
+            this.btnSendContinu = new System.Windows.Forms.Button();
+            this.btnSend_1fois = new System.Windows.Forms.Button();
+            this.listBoxTX = new System.Windows.Forms.ListBox();
+            this.numOffset = new System.Windows.Forms.NumericUpDown();
+            this.numAmplitude = new System.Windows.Forms.NumericUpDown();
+            this.numFrequence = new System.Windows.Forms.NumericUpDown();
+            this.cboxForme = new System.Windows.Forms.ComboBox();
+            this.lblOffset = new System.Windows.Forms.Label();
+            this.lblAmplitude = new System.Windows.Forms.Label();
+            this.lblFormeS = new System.Windows.Forms.Label();
+            this.lblFrequence = new System.Windows.Forms.Label();
+            this.gpBoxRX = new System.Windows.Forms.GroupBox();
             this.listBox_RX = new System.Windows.Forms.ListBox();
+            this.txtBoxOffset = new System.Windows.Forms.TextBox();
+            this.txtBoxAmplitude = new System.Windows.Forms.TextBox();
+            this.txtBoxFrequence = new System.Windows.Forms.TextBox();
+            this.txtBoxForme = new System.Windows.Forms.TextBox();
+            this.lblOffsetRX = new System.Windows.Forms.Label();
+            this.lblFrequenceRX = new System.Windows.Forms.Label();
+            this.lblAmplitudeRX = new System.Windows.Forms.Label();
+            this.lblFormeRX = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.groupBox1.SuspendLayout();
             this.gpBoxTX.SuspendLayout();
-            this.gpBoxRX.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numFrequence)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAmplitude)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numOffset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAmplitude)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFrequence)).BeginInit();
+            this.gpBoxRX.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -75,16 +75,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reglage port COM";
             // 
-            // cboxPortCOM
-            // 
-            this.cboxPortCOM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxPortCOM.FormattingEnabled = true;
-            this.cboxPortCOM.Location = new System.Drawing.Point(21, 29);
-            this.cboxPortCOM.Name = "cboxPortCOM";
-            this.cboxPortCOM.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cboxPortCOM.Size = new System.Drawing.Size(121, 21);
-            this.cboxPortCOM.TabIndex = 0;
-            // 
             // btnOpenPort
             // 
             this.btnOpenPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,6 +85,16 @@
             this.btnOpenPort.Text = "Open port";
             this.btnOpenPort.UseVisualStyleBackColor = true;
             this.btnOpenPort.Click += new System.EventHandler(this.btnOpenPort_Click);
+            // 
+            // cboxPortCOM
+            // 
+            this.cboxPortCOM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxPortCOM.FormattingEnabled = true;
+            this.cboxPortCOM.Location = new System.Drawing.Point(21, 29);
+            this.cboxPortCOM.Name = "cboxPortCOM";
+            this.cboxPortCOM.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cboxPortCOM.Size = new System.Drawing.Size(121, 21);
+            this.cboxPortCOM.TabIndex = 0;
             // 
             // gpBoxTX
             // 
@@ -117,73 +117,81 @@
             this.gpBoxTX.TabStop = false;
             this.gpBoxTX.Text = "TX";
             // 
-            // gpBoxRX
+            // chBoxSuavegarde
             // 
-            this.gpBoxRX.Controls.Add(this.listBox_RX);
-            this.gpBoxRX.Controls.Add(this.txtBoxOffset);
-            this.gpBoxRX.Controls.Add(this.txtBoxAmplitude);
-            this.gpBoxRX.Controls.Add(this.txtBoxFrequence);
-            this.gpBoxRX.Controls.Add(this.txtBoxForme);
-            this.gpBoxRX.Controls.Add(this.lblOffsetRX);
-            this.gpBoxRX.Controls.Add(this.lblFrequenceRX);
-            this.gpBoxRX.Controls.Add(this.lblAmplitudeRX);
-            this.gpBoxRX.Controls.Add(this.lblFormeRX);
-            this.gpBoxRX.Location = new System.Drawing.Point(304, 106);
-            this.gpBoxRX.Name = "gpBoxRX";
-            this.gpBoxRX.Size = new System.Drawing.Size(264, 338);
-            this.gpBoxRX.TabIndex = 2;
-            this.gpBoxRX.TabStop = false;
-            this.gpBoxRX.Text = "RX";
+            this.chBoxSuavegarde.AutoSize = true;
+            this.chBoxSuavegarde.Location = new System.Drawing.Point(6, 141);
+            this.chBoxSuavegarde.Name = "chBoxSuavegarde";
+            this.chBoxSuavegarde.Size = new System.Drawing.Size(93, 17);
+            this.chBoxSuavegarde.TabIndex = 11;
+            this.chBoxSuavegarde.Text = "Sauvegarde ?";
+            this.chBoxSuavegarde.UseVisualStyleBackColor = true;
             // 
-            // lblFrequence
+            // btnSendContinu
             // 
-            this.lblFrequence.AutoSize = true;
-            this.lblFrequence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrequence.Location = new System.Drawing.Point(6, 78);
-            this.lblFrequence.Name = "lblFrequence";
-            this.lblFrequence.Size = new System.Drawing.Size(72, 16);
-            this.lblFrequence.TabIndex = 0;
-            this.lblFrequence.Text = "Frequence";
+            this.btnSendContinu.Location = new System.Drawing.Point(160, 112);
+            this.btnSendContinu.Name = "btnSendContinu";
+            this.btnSendContinu.Size = new System.Drawing.Size(120, 23);
+            this.btnSendContinu.TabIndex = 10;
+            this.btnSendContinu.Text = "Envoi continu";
+            this.btnSendContinu.UseVisualStyleBackColor = true;
             // 
-            // lblFormeS
+            // btnSend_1fois
             // 
-            this.lblFormeS.AutoSize = true;
-            this.lblFormeS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFormeS.Location = new System.Drawing.Point(6, 33);
-            this.lblFormeS.Name = "lblFormeS";
-            this.lblFormeS.Size = new System.Drawing.Size(46, 16);
-            this.lblFormeS.TabIndex = 1;
-            this.lblFormeS.Text = "Forme";
+            this.btnSend_1fois.Location = new System.Drawing.Point(6, 112);
+            this.btnSend_1fois.Name = "btnSend_1fois";
+            this.btnSend_1fois.Size = new System.Drawing.Size(75, 23);
+            this.btnSend_1fois.TabIndex = 9;
+            this.btnSend_1fois.Text = "Envoi";
+            this.btnSend_1fois.UseVisualStyleBackColor = true;
+            this.btnSend_1fois.Click += new System.EventHandler(this.btnSend_1fois_Click);
             // 
-            // lblAmplitude
+            // listBoxTX
             // 
-            this.lblAmplitude.AutoSize = true;
-            this.lblAmplitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmplitude.Location = new System.Drawing.Point(157, 33);
-            this.lblAmplitude.Name = "lblAmplitude";
-            this.lblAmplitude.Size = new System.Drawing.Size(67, 16);
-            this.lblAmplitude.TabIndex = 2;
-            this.lblAmplitude.Text = "Amplitude";
+            this.listBoxTX.FormattingEnabled = true;
+            this.listBoxTX.Location = new System.Drawing.Point(6, 164);
+            this.listBoxTX.Name = "listBoxTX";
+            this.listBoxTX.Size = new System.Drawing.Size(274, 160);
+            this.listBoxTX.TabIndex = 8;
             // 
-            // lblOffset
+            // numOffset
             // 
-            this.lblOffset.AutoSize = true;
-            this.lblOffset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOffset.Location = new System.Drawing.Point(157, 82);
-            this.lblOffset.Name = "lblOffset";
-            this.lblOffset.Size = new System.Drawing.Size(41, 16);
-            this.lblOffset.TabIndex = 3;
-            this.lblOffset.Text = "Offset";
+            this.numOffset.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numOffset.Location = new System.Drawing.Point(230, 82);
+            this.numOffset.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.numOffset.Minimum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            -2147483648});
+            this.numOffset.Name = "numOffset";
+            this.numOffset.Size = new System.Drawing.Size(50, 20);
+            this.numOffset.TabIndex = 7;
             // 
-            // cboxForme
+            // numAmplitude
             // 
-            this.cboxForme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxForme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxForme.FormattingEnabled = true;
-            this.cboxForme.Location = new System.Drawing.Point(70, 29);
-            this.cboxForme.Name = "cboxForme";
-            this.cboxForme.Size = new System.Drawing.Size(72, 24);
-            this.cboxForme.TabIndex = 4;
+            this.numAmplitude.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numAmplitude.Location = new System.Drawing.Point(230, 32);
+            this.numAmplitude.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numAmplitude.Name = "numAmplitude";
+            this.numAmplitude.Size = new System.Drawing.Size(50, 20);
+            this.numAmplitude.TabIndex = 6;
             // 
             // numFrequence
             // 
@@ -212,111 +220,113 @@
             0,
             0});
             // 
-            // numAmplitude
+            // cboxForme
             // 
-            this.numAmplitude.Increment = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numAmplitude.Location = new System.Drawing.Point(230, 32);
-            this.numAmplitude.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numAmplitude.Name = "numAmplitude";
-            this.numAmplitude.Size = new System.Drawing.Size(50, 20);
-            this.numAmplitude.TabIndex = 6;
-            this.numAmplitude.ValueChanged += new System.EventHandler(this.numAmplitude_ValueChanged);
+            this.cboxForme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxForme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxForme.FormattingEnabled = true;
+            this.cboxForme.Location = new System.Drawing.Point(70, 29);
+            this.cboxForme.Name = "cboxForme";
+            this.cboxForme.Size = new System.Drawing.Size(72, 24);
+            this.cboxForme.TabIndex = 4;
             // 
-            // numOffset
+            // lblOffset
             // 
-            this.numOffset.Increment = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numOffset.Location = new System.Drawing.Point(230, 82);
-            this.numOffset.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.numOffset.Minimum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            -2147483648});
-            this.numOffset.Name = "numOffset";
-            this.numOffset.Size = new System.Drawing.Size(50, 20);
-            this.numOffset.TabIndex = 7;
+            this.lblOffset.AutoSize = true;
+            this.lblOffset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOffset.Location = new System.Drawing.Point(157, 82);
+            this.lblOffset.Name = "lblOffset";
+            this.lblOffset.Size = new System.Drawing.Size(41, 16);
+            this.lblOffset.TabIndex = 3;
+            this.lblOffset.Text = "Offset";
             // 
-            // listBoxTX
+            // lblAmplitude
             // 
-            this.listBoxTX.FormattingEnabled = true;
-            this.listBoxTX.Location = new System.Drawing.Point(6, 164);
-            this.listBoxTX.Name = "listBoxTX";
-            this.listBoxTX.Size = new System.Drawing.Size(274, 160);
-            this.listBoxTX.TabIndex = 8;
+            this.lblAmplitude.AutoSize = true;
+            this.lblAmplitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmplitude.Location = new System.Drawing.Point(157, 33);
+            this.lblAmplitude.Name = "lblAmplitude";
+            this.lblAmplitude.Size = new System.Drawing.Size(67, 16);
+            this.lblAmplitude.TabIndex = 2;
+            this.lblAmplitude.Text = "Amplitude";
             // 
-            // btnSend_1fois
+            // lblFormeS
             // 
-            this.btnSend_1fois.Location = new System.Drawing.Point(6, 112);
-            this.btnSend_1fois.Name = "btnSend_1fois";
-            this.btnSend_1fois.Size = new System.Drawing.Size(75, 23);
-            this.btnSend_1fois.TabIndex = 9;
-            this.btnSend_1fois.Text = "Envoi";
-            this.btnSend_1fois.UseVisualStyleBackColor = true;
+            this.lblFormeS.AutoSize = true;
+            this.lblFormeS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormeS.Location = new System.Drawing.Point(6, 33);
+            this.lblFormeS.Name = "lblFormeS";
+            this.lblFormeS.Size = new System.Drawing.Size(46, 16);
+            this.lblFormeS.TabIndex = 1;
+            this.lblFormeS.Text = "Forme";
             // 
-            // btnSendContinu
+            // lblFrequence
             // 
-            this.btnSendContinu.Location = new System.Drawing.Point(160, 112);
-            this.btnSendContinu.Name = "btnSendContinu";
-            this.btnSendContinu.Size = new System.Drawing.Size(120, 23);
-            this.btnSendContinu.TabIndex = 10;
-            this.btnSendContinu.Text = "Envoi continu";
-            this.btnSendContinu.UseVisualStyleBackColor = true;
+            this.lblFrequence.AutoSize = true;
+            this.lblFrequence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrequence.Location = new System.Drawing.Point(6, 78);
+            this.lblFrequence.Name = "lblFrequence";
+            this.lblFrequence.Size = new System.Drawing.Size(72, 16);
+            this.lblFrequence.TabIndex = 0;
+            this.lblFrequence.Text = "Frequence";
             // 
-            // chBoxSuavegarde
+            // gpBoxRX
             // 
-            this.chBoxSuavegarde.AutoSize = true;
-            this.chBoxSuavegarde.Location = new System.Drawing.Point(6, 141);
-            this.chBoxSuavegarde.Name = "chBoxSuavegarde";
-            this.chBoxSuavegarde.Size = new System.Drawing.Size(93, 17);
-            this.chBoxSuavegarde.TabIndex = 11;
-            this.chBoxSuavegarde.Text = "Sauvegarde ?";
-            this.chBoxSuavegarde.UseVisualStyleBackColor = true;
+            this.gpBoxRX.Controls.Add(this.listBox_RX);
+            this.gpBoxRX.Controls.Add(this.txtBoxOffset);
+            this.gpBoxRX.Controls.Add(this.txtBoxAmplitude);
+            this.gpBoxRX.Controls.Add(this.txtBoxFrequence);
+            this.gpBoxRX.Controls.Add(this.txtBoxForme);
+            this.gpBoxRX.Controls.Add(this.lblOffsetRX);
+            this.gpBoxRX.Controls.Add(this.lblFrequenceRX);
+            this.gpBoxRX.Controls.Add(this.lblAmplitudeRX);
+            this.gpBoxRX.Controls.Add(this.lblFormeRX);
+            this.gpBoxRX.Location = new System.Drawing.Point(304, 106);
+            this.gpBoxRX.Name = "gpBoxRX";
+            this.gpBoxRX.Size = new System.Drawing.Size(264, 338);
+            this.gpBoxRX.TabIndex = 2;
+            this.gpBoxRX.TabStop = false;
+            this.gpBoxRX.Text = "RX";
             // 
-            // lblFormeRX
+            // listBox_RX
             // 
-            this.lblFormeRX.AutoSize = true;
-            this.lblFormeRX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFormeRX.Location = new System.Drawing.Point(26, 40);
-            this.lblFormeRX.Name = "lblFormeRX";
-            this.lblFormeRX.Size = new System.Drawing.Size(46, 16);
-            this.lblFormeRX.TabIndex = 0;
-            this.lblFormeRX.Text = "Forme";
+            this.listBox_RX.FormattingEnabled = true;
+            this.listBox_RX.Location = new System.Drawing.Point(6, 164);
+            this.listBox_RX.Name = "listBox_RX";
+            this.listBox_RX.Size = new System.Drawing.Size(252, 160);
+            this.listBox_RX.TabIndex = 8;
             // 
-            // lblAmplitudeRX
+            // txtBoxOffset
             // 
-            this.lblAmplitudeRX.AutoSize = true;
-            this.lblAmplitudeRX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmplitudeRX.Location = new System.Drawing.Point(26, 94);
-            this.lblAmplitudeRX.Name = "lblAmplitudeRX";
-            this.lblAmplitudeRX.Size = new System.Drawing.Size(67, 16);
-            this.lblAmplitudeRX.TabIndex = 1;
-            this.lblAmplitudeRX.Text = "Amplitude";
+            this.txtBoxOffset.Location = new System.Drawing.Point(127, 117);
+            this.txtBoxOffset.Name = "txtBoxOffset";
+            this.txtBoxOffset.ReadOnly = true;
+            this.txtBoxOffset.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxOffset.TabIndex = 7;
             // 
-            // lblFrequenceRX
+            // txtBoxAmplitude
             // 
-            this.lblFrequenceRX.AutoSize = true;
-            this.lblFrequenceRX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrequenceRX.Location = new System.Drawing.Point(26, 67);
-            this.lblFrequenceRX.Name = "lblFrequenceRX";
-            this.lblFrequenceRX.Size = new System.Drawing.Size(72, 16);
-            this.lblFrequenceRX.TabIndex = 2;
-            this.lblFrequenceRX.Text = "Frequence";
+            this.txtBoxAmplitude.Location = new System.Drawing.Point(127, 90);
+            this.txtBoxAmplitude.Name = "txtBoxAmplitude";
+            this.txtBoxAmplitude.ReadOnly = true;
+            this.txtBoxAmplitude.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxAmplitude.TabIndex = 6;
+            // 
+            // txtBoxFrequence
+            // 
+            this.txtBoxFrequence.Location = new System.Drawing.Point(127, 63);
+            this.txtBoxFrequence.Name = "txtBoxFrequence";
+            this.txtBoxFrequence.ReadOnly = true;
+            this.txtBoxFrequence.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxFrequence.TabIndex = 5;
+            // 
+            // txtBoxForme
+            // 
+            this.txtBoxForme.Location = new System.Drawing.Point(127, 36);
+            this.txtBoxForme.Name = "txtBoxForme";
+            this.txtBoxForme.ReadOnly = true;
+            this.txtBoxForme.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxForme.TabIndex = 4;
             // 
             // lblOffsetRX
             // 
@@ -328,45 +338,35 @@
             this.lblOffsetRX.TabIndex = 3;
             this.lblOffsetRX.Text = "Offset";
             // 
-            // txtBoxForme
+            // lblFrequenceRX
             // 
-            this.txtBoxForme.Location = new System.Drawing.Point(127, 36);
-            this.txtBoxForme.Name = "txtBoxForme";
-            this.txtBoxForme.ReadOnly = true;
-            this.txtBoxForme.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxForme.TabIndex = 4;
+            this.lblFrequenceRX.AutoSize = true;
+            this.lblFrequenceRX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrequenceRX.Location = new System.Drawing.Point(26, 67);
+            this.lblFrequenceRX.Name = "lblFrequenceRX";
+            this.lblFrequenceRX.Size = new System.Drawing.Size(72, 16);
+            this.lblFrequenceRX.TabIndex = 2;
+            this.lblFrequenceRX.Text = "Frequence";
             // 
-            // txtBoxFrequence
+            // lblAmplitudeRX
             // 
-            this.txtBoxFrequence.Location = new System.Drawing.Point(127, 63);
-            this.txtBoxFrequence.Name = "txtBoxFrequence";
-            this.txtBoxFrequence.ReadOnly = true;
-            this.txtBoxFrequence.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxFrequence.TabIndex = 5;
+            this.lblAmplitudeRX.AutoSize = true;
+            this.lblAmplitudeRX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmplitudeRX.Location = new System.Drawing.Point(26, 94);
+            this.lblAmplitudeRX.Name = "lblAmplitudeRX";
+            this.lblAmplitudeRX.Size = new System.Drawing.Size(67, 16);
+            this.lblAmplitudeRX.TabIndex = 1;
+            this.lblAmplitudeRX.Text = "Amplitude";
             // 
-            // txtBoxAmplitude
+            // lblFormeRX
             // 
-            this.txtBoxAmplitude.Location = new System.Drawing.Point(127, 90);
-            this.txtBoxAmplitude.Name = "txtBoxAmplitude";
-            this.txtBoxAmplitude.ReadOnly = true;
-            this.txtBoxAmplitude.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxAmplitude.TabIndex = 6;
-            // 
-            // txtBoxOffset
-            // 
-            this.txtBoxOffset.Location = new System.Drawing.Point(127, 117);
-            this.txtBoxOffset.Name = "txtBoxOffset";
-            this.txtBoxOffset.ReadOnly = true;
-            this.txtBoxOffset.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxOffset.TabIndex = 7;
-            // 
-            // listBox_RX
-            // 
-            this.listBox_RX.FormattingEnabled = true;
-            this.listBox_RX.Location = new System.Drawing.Point(6, 164);
-            this.listBox_RX.Name = "listBox_RX";
-            this.listBox_RX.Size = new System.Drawing.Size(252, 160);
-            this.listBox_RX.TabIndex = 8;
+            this.lblFormeRX.AutoSize = true;
+            this.lblFormeRX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormeRX.Location = new System.Drawing.Point(26, 40);
+            this.lblFormeRX.Name = "lblFormeRX";
+            this.lblFormeRX.Size = new System.Drawing.Size(46, 16);
+            this.lblFormeRX.TabIndex = 0;
+            this.lblFormeRX.Text = "Forme";
             // 
             // ControlGen_V1
             // 
@@ -384,11 +384,11 @@
             this.groupBox1.ResumeLayout(false);
             this.gpBoxTX.ResumeLayout(false);
             this.gpBoxTX.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numOffset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAmplitude)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFrequence)).EndInit();
             this.gpBoxRX.ResumeLayout(false);
             this.gpBoxRX.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numFrequence)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAmplitude)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numOffset)).EndInit();
             this.ResumeLayout(false);
 
         }
