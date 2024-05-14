@@ -56,6 +56,8 @@
             this.lblAmplitudeRX = new System.Windows.Forms.Label();
             this.lblFormeRX = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnClearBox = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.gpBoxTX.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOffset)).BeginInit();
@@ -78,7 +80,7 @@
             // btnOpenPort
             // 
             this.btnOpenPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenPort.Location = new System.Drawing.Point(184, 29);
+            this.btnOpenPort.Location = new System.Drawing.Point(160, 31);
             this.btnOpenPort.Name = "btnOpenPort";
             this.btnOpenPort.Size = new System.Drawing.Size(102, 23);
             this.btnOpenPort.TabIndex = 1;
@@ -90,7 +92,7 @@
             // 
             this.cboxPortCOM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxPortCOM.FormattingEnabled = true;
-            this.cboxPortCOM.Location = new System.Drawing.Point(21, 29);
+            this.cboxPortCOM.Location = new System.Drawing.Point(9, 31);
             this.cboxPortCOM.Name = "cboxPortCOM";
             this.cboxPortCOM.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cboxPortCOM.Size = new System.Drawing.Size(121, 21);
@@ -98,6 +100,7 @@
             // 
             // gpBoxTX
             // 
+            this.gpBoxTX.Controls.Add(this.btnClearBox);
             this.gpBoxTX.Controls.Add(this.chBoxSuavegarde);
             this.gpBoxTX.Controls.Add(this.btnSendContinu);
             this.gpBoxTX.Controls.Add(this.btnSend_1fois);
@@ -135,6 +138,7 @@
             this.btnSendContinu.TabIndex = 10;
             this.btnSendContinu.Text = "Envoi continu";
             this.btnSendContinu.UseVisualStyleBackColor = true;
+            this.btnSendContinu.Click += new System.EventHandler(this.btnSendContinu_Click);
             // 
             // btnSend_1fois
             // 
@@ -368,6 +372,24 @@
             this.lblFormeRX.TabIndex = 0;
             this.lblFormeRX.Text = "Forme";
             // 
+            // serialPort1
+            // 
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.ReceptionDatas);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnClearBox
+            // 
+            this.btnClearBox.Location = new System.Drawing.Point(160, 135);
+            this.btnClearBox.Name = "btnClearBox";
+            this.btnClearBox.Size = new System.Drawing.Size(120, 23);
+            this.btnClearBox.TabIndex = 12;
+            this.btnClearBox.Text = "Clear box";
+            this.btnClearBox.UseVisualStyleBackColor = true;
+            this.btnClearBox.Click += new System.EventHandler(this.btnClearBox_Click);
+            // 
             // ControlGen_V1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,6 +444,8 @@
         private System.Windows.Forms.Label lblAmplitudeRX;
         private System.Windows.Forms.Label lblFormeRX;
         private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnClearBox;
     }
 }
 
