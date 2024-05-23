@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlGen_V1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnOpenPort = new System.Windows.Forms.Button();
             this.cboxPortCOM = new System.Windows.Forms.ComboBox();
             this.gpBoxTX = new System.Windows.Forms.GroupBox();
+            this.btnClearBox = new System.Windows.Forms.Button();
             this.chBoxSuavegarde = new System.Windows.Forms.CheckBox();
             this.btnSendContinu = new System.Windows.Forms.Button();
             this.btnSend_1fois = new System.Windows.Forms.Button();
@@ -57,7 +59,6 @@
             this.lblFormeRX = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnClearBox = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.gpBoxTX.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numOffset)).BeginInit();
@@ -97,6 +98,7 @@
             this.cboxPortCOM.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cboxPortCOM.Size = new System.Drawing.Size(121, 21);
             this.cboxPortCOM.TabIndex = 0;
+            this.cboxPortCOM.DropDown += new System.EventHandler(this.cboxPortCOM_DropDown);
             // 
             // gpBoxTX
             // 
@@ -119,6 +121,16 @@
             this.gpBoxTX.TabIndex = 1;
             this.gpBoxTX.TabStop = false;
             this.gpBoxTX.Text = "TX";
+            // 
+            // btnClearBox
+            // 
+            this.btnClearBox.Location = new System.Drawing.Point(160, 135);
+            this.btnClearBox.Name = "btnClearBox";
+            this.btnClearBox.Size = new System.Drawing.Size(120, 23);
+            this.btnClearBox.TabIndex = 12;
+            this.btnClearBox.Text = "Clear box";
+            this.btnClearBox.UseVisualStyleBackColor = true;
+            this.btnClearBox.Click += new System.EventHandler(this.btnClearBox_Click);
             // 
             // chBoxSuavegarde
             // 
@@ -380,16 +392,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnClearBox
-            // 
-            this.btnClearBox.Location = new System.Drawing.Point(160, 135);
-            this.btnClearBox.Name = "btnClearBox";
-            this.btnClearBox.Size = new System.Drawing.Size(120, 23);
-            this.btnClearBox.TabIndex = 12;
-            this.btnClearBox.Text = "Clear box";
-            this.btnClearBox.UseVisualStyleBackColor = true;
-            this.btnClearBox.Click += new System.EventHandler(this.btnClearBox_Click);
-            // 
             // ControlGen_V1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,8 +403,10 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ControlGen_V1";
             this.Text = "Control Gen.V1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ControlGen_V1_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.gpBoxTX.ResumeLayout(false);
             this.gpBoxTX.PerformLayout();
